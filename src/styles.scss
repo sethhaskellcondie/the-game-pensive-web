@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+//brand colors
+$black: #181818;
+$brandRed: #c32b15;
+$darkGrey: #9b9b9d;
+$lightGrey: #c1c1c3;
+$nightBlack: #36353b; //dark mode background
+
+body {
+  background-color: $darkGrey;
+}
