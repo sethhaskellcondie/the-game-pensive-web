@@ -7,7 +7,6 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   template: `
     <div class="box">
-      <h6>Header Component</h6>
       <img src="../../../assets/images/game_pensive_icon.png" alt="game_pensive_icon" height="144px">
       <h1>The Game Pensive</h1>
     </div>
@@ -17,9 +16,6 @@ import { CommonModule } from '@angular/common';
     display: flex;
     justify-content: center;
     align-items: center;
-    border-style: solid;
-    border-width: 4px;
-    border-color: black;
     height: 100px;
   }
   `

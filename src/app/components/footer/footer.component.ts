@@ -7,10 +7,7 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   template: `
     <div class="box">
-      <h6>Footer Component</h6>
-      <h3>Systems</h3>
-      <h3>Settings</h3>
-      <h6>Not sure what should go here</h6>
+      <h6>Work In Progress</h6>
     </div>
   `,
   styles: `
@@ -18,12 +15,12 @@ import { CommonModule } from '@angular/common';
     display: flex;
     justify-content: center;
     align-items: center;
-    border-style: solid;
+    border-top-style: solid;
     border-width: 4px;
     border-color: black;
     height: 50px;
   }
-  h6, h3 {
+  h6 {
     margin: 10px;
   }
   `
