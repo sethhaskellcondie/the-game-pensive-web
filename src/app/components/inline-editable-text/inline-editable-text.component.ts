@@ -1,5 +1,7 @@
 import {Component, Input} from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {SystemsRowComponent} from "../systems-row/systems-row.component";
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-inline-editable-text',

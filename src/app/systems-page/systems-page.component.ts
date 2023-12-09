@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {System} from "../objects/system";
-import {SYSTEMS} from "../objects/mock-systems";
+import {SystemService} from "../services/system.service";
 import {SystemsRowComponent} from "../components/systems-row/systems-row.component";
 
 @Component({
@@ -12,5 +12,12 @@ import {SystemsRowComponent} from "../components/systems-row/systems-row.compone
   styleUrl: './systems-page.component.scss'
 })
 export class SystemsPageComponent {
-  systems: System[] = SYSTEMS;
+  systems: System[] = [];
+
+  constructor(private systemService: SystemService) {
+  }
+
+  ngOnInit(): void {
+    this.systemService.getSystems().subscribe((systems) => this.systems = systems);
+  }
 }
