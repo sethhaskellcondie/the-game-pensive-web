@@ -2,9 +2,9 @@ import {Component, Input} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {Observable, Subject} from "rxjs";
 import {System} from "../../objects/system";
-import {InlineEditableTextComponent} from "../inline-editable-text/inline-editable-text.component";
-import {InlineEditableNumberComponent} from "../inline-editable-number/inline-editable-number.component";
-import {InlineEditableBooleanComponent} from "../inline-editable-boolean/inline-editable-boolean.component";
+import {InlineEditableTextComponent} from "../../smol-components/inline-editable-text/inline-editable-text.component";
+import {InlineEditableNumberComponent} from "../../smol-components/inline-editable-number/inline-editable-number.component";
+import {InlineEditableBooleanComponent} from "../../smol-components/inline-editable-boolean/inline-editable-boolean.component";
 
 @Component({
   selector: 'app-systems-row',
